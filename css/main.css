@@ -2,3 +2,35 @@ body {
   margin: 0px;
   padding: 0px;
 }
+
+body {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+}
+
+#open-col {
+}
+
+#navbar {
+  display: inline-block;
+  position: fixed;
+  height: 100vh;
+  background: blue;
+  overflow-y: scroll;
+}
+
+#main {
+  height: 100vh;
+  overflow-y: scroll;
+}
+
+@media screen and (max-width: 600px) {
+  body {
+    display: block;
+  }
+
+  #navbar {
+    position: relative;
+    height: auto;
+  }
+}
